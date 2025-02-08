@@ -33,7 +33,7 @@ const Register = () => {
         headers: { "Content-Type": "multipart/form-data" },
       });
 
-      return response.data.location; // Ensure your API returns the uploaded image URL
+      return response.data.location; 
     } catch (error) {
       console.error("Image Upload Failed:", error);
       throw new Error("Image upload failed");
